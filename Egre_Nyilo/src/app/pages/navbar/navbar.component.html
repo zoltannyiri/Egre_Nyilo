@@ -1,12 +1,38 @@
   <!-- Hero -->
-  <div class="et-hero-tabs-upper bg-white navbar nav">
-    <a class="et-hero-tab " href="#tab-es6">Logó helye</a>
-    <a class="et-hero-tab " href="#tab-es6">Kezdőlap</a>
-    <a class="et-hero-tab" href="#tab-flexbox">Flexbox</a>
-    <a class="et-hero-tab" href="#tab-react">React</a>
-    <a class="et-hero-tab" href="#tab-angular">Angular</a>
-    <a class="et-hero-tab" href="#tab-other">Other</a>
-    <span class="et-hero-tab-slider"></span>
+  <div class="navbar-wrapper">
+    <div class="desktop-navbar">
+
+      <div class="et-hero-tabs-upper bg-white navbar nav">
+        <a class="" href="#tab-es6" >
+          <img src="assets/logo.png" alt="Logó" class="logo-img" width="100" height="75">
+          </a>
+        <a class="et-hero-tab rounded" href="#tab-es6">Kezdőlap</a>
+        <a class="et-hero-tab rounded" href="#tab-flexbox">Flexbox</a>
+        <a class="et-hero-tab rounded" href="#tab-react">React</a>
+        <a class="et-hero-tab rounded" href="#tab-angular">Angular</a>
+        <a class="et-hero-tab rounded" href="#tab-other">Other</a>
+        <span class="et-hero-tab-slider"></span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="mobile-navbar" *nkIf="isMobile()">
+    <div class="burger-icon" (click)="toggleMenu()">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="navbar-menu" [class.open]="menuOpen">
+      <ul>
+        <a class="et-hero-tab rounded" href="#tab-es6">Kezdőlap</a>
+        <a class="et-hero-tab rounded" href="#tab-flexbox">Flexbox</a>
+        <a class="et-hero-tab rounded" href="#tab-react">React</a>
+        <a class="et-hero-tab rounded" href="#tab-angular">Angular</a>
+        <a class="et-hero-tab rounded" href="#tab-other">Other</a>
+      </ul>
+    </div>
   </div>
 
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

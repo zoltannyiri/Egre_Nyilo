@@ -84,3 +84,57 @@ a {
 		font-size: 1rem;
 	}
 }
+
+.navbar-wrapper {
+  position: relative;
+}
+
+.burger-icon {
+  cursor: pointer;
+}
+
+.navbar-menu {
+  position: absolute;
+  top: 50px; /* A navbar magasságától függően változtathatod */
+  left: -100%; /* Elrejtjük alapértelmezetten */
+  width: 200px; /* Változtathatod a menü szélességét */
+  transition: left 0.3s ease; /* Animáció hozzáadása */
+  background-color: #f8f9fa; /* Háttérszín */
+  border: 1px solid #dee2e6; /* Keret */
+  padding: 10px; /* Belső tér */
+}
+
+.navbar-menu.open {
+  left: 0; /* Kicsúszó menü pozíciója */
+}
+
+.desktop-navbar {
+  display: block; // Asztali nézetben jelenik meg
+}
+
+.mobile-navbar {
+  display: none; // Alapértelmezetten nem jelenik meg mobil nézetben
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000; /* Ha más elemek kerülnek rá, akkor ez biztosítja, hogy a sáv felül legyen */
+}
+
+/* Ha szükséges, állítsd be a margin-top tulajdonságot a tartalomnak,
+   hogy ne essen át a sáv alá, amikor rögzítetté válik. */
+.content {
+  margin-top: 50px; /* példa: ha a sáv magassága 50px */
+}
+
+@media (max-width: 767px) {
+  .desktop-navbar {
+    display: none; // Mobil nézetben elrejtjük az asztali nézetet
+  }
+  .mobile-navbar {
+    display: block; // Mobil nézetben jelenik meg a burger menü
+  }
+}
