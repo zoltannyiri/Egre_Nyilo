@@ -1,11 +1,10 @@
   <!-- Hero -->
   <div class="navbar-wrapper">
-    <div class="desktop-navbar">
-
+    <div class="desktop-navbar" *ngIf="!isMobileView">
       <div class="et-hero-tabs-upper bg-white navbar nav">
-        <a class="" href="#tab-es6" >
+        <a [routerLink]="['/kezdolap']" routerLinkActive="router-link-active" class="">
           <img src="assets/logo.png" alt="Logó" class="logo-img" width="100" height="75">
-          </a>
+        </a>
         <a class="et-hero-tab rounded" href="#tab-es6">Kezdőlap</a>
         <a class="et-hero-tab rounded" href="#tab-flexbox">Flexbox</a>
         <a class="et-hero-tab rounded" href="#tab-react">React</a>
@@ -13,12 +12,46 @@
         <a class="et-hero-tab rounded" href="#tab-other">Other</a>
         <span class="et-hero-tab-slider"></span>
       </div>
-
     </div>
   </div>
 
-  <div class="mobile-navbar" *nkIf="isMobile()">
-    <div class="burger-icon" (click)="toggleMenu()">
+  <div *ngIf="isMobileView" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <a class="navbar-brand" [routerLink]="['/kezdolap']">
+        <img src="assets/logo.png" alt="Logó" class="logo-img" width="50" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" (click)="toggleMenu()" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" [class.show]="menuOpen" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" [routerLink]="['/kezdolap']" routerLinkActive="active">Kezdőlap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/flexbox']" routerLinkActive="active">Flexbox</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/react']" routerLinkActive="active">React</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/angular']" routerLinkActive="active">Angular</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/other']" routerLinkActive="active">Other</a>
+        </li>
+
+        <li class="nav-item">
+          <a>teszt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- <div class="mobile-navbar navbar-toggler collapse navbar-collapse" ">
+    <div class="burger-icon navbar-toggler " (click)="toggleMenu()">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,7 +66,7 @@
         <a class="et-hero-tab rounded" href="#tab-other">Other</a>
       </ul>
     </div>
-  </div>
+  </div> -->
 
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
