@@ -139,4 +139,19 @@ a {
   }
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 100px;
+  height: 75px;
+}
+
+.logo-text {
+  font-size: 24px; /* Igazítsd a szöveg méretét a logó méretéhez */
+  font-weight: bold; /* Igazítsd a szöveg stílusát */
+  margin-left: 10px; /* Távolság a logótól */
+}
 
