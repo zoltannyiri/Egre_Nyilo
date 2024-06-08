@@ -3,9 +3,9 @@
     <div class="desktop-navbar" *ngIf="!isMobileView">
       <div class="et-hero-tabs-upper bg-white navbar nav">
         <a [routerLink]="['/kezdolap']" routerLinkActive="router-link-active" class="">
-          <div class="logo-cointainer">
-           <img src="assets/logo.png" alt="Logó" class="logo-img" width="100" height="75">
-           <span class="logo-text">Égre Nyíló Mentálhigiénés Műhely</span>
+          <div class="logo-cointainer justify-content-center">
+           <img src="assets/logo-szoveg.png" alt="Logó" class="logo-img justify-content-center">
+           <!-- <span class="logo-text">Égre Nyíló Mentálhigiénés Műhely</span> -->
           </div>
         </a>
         <a class="et-hero-tab rounded" href="#tab-es6">Kezdőlap</a>
@@ -18,17 +18,17 @@
     </div>
   </div>
 
-  <div *ngIf="isMobileView" class="navbar navbar-expand-lg navbar-light bg-light">
+  <div *ngIf="isMobileView" class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <a class="navbar-brand" [routerLink]="['/kezdolap']">
-        <img src="assets/logo.png" alt="Logó" class="logo-img" width="50" height="50">
+        <img src="assets/logo-szoveg.png" alt="Logó" class="logo-img" width="50" height="50">
       </a>
       <button class="navbar-toggler" type="button" (click)="toggleMenu()" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
     <div class="collapse navbar-collapse" [class.show]="menuOpen" id="navbarNav">
-      <ul class="navbar-nav d-flex flex-column justify-content-end align-items-end">
+      <ul class="navbar-nav d-flex bg-light flex-column justify-content-center align-items-center">
         <li class="nav-item justify-content-end">
           <a class="nav-link active justify-content-end" [routerLink]="['/kezdolap']" routerLinkActive="active">Kezdőlap</a>
         </li>
@@ -51,6 +51,7 @@
       </ul>
     </div>
   </div>
+
 
 
   <!-- <div class="mobile-navbar navbar-toggler collapse navbar-collapse" ">

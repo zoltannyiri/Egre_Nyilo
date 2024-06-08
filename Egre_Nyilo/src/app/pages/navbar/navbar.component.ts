@@ -19,6 +19,7 @@ export class NavbarComponent {
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
+
   }
 
   checkIsMobile(): boolean {
@@ -29,4 +30,6 @@ export class NavbarComponent {
   onResize(event: UIEvent): void {
     this.isMobileView = this.checkIsMobile();
   }
+
+
 }

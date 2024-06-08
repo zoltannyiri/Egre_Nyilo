@@ -145,8 +145,8 @@ a {
 }
 
 .logo-img {
-  width: 100px;
-  height: 75px;
+  width: 350px;
+  height: 100px;
 }
 
 .logo-text {
@@ -155,3 +155,67 @@ a {
   margin-left: 10px; /* Távolság a logótól */
 }
 
+//menü lenyílásának animációjaű
+
+// @keyframes slideDown {
+//   0% {
+//     transform: translateY(-50%);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }
+
+// .navbar-nav {
+//   height: 30vh; /* A teljes képernyő magassága */
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center; /* Középre igazítás függőlegesen */
+//   align-items: center; /* Középre igazítás vízszintesen */
+// }
+
+// .navbar-collapse {
+//   animation: slideDown 0.5s ease-in-out;
+// }
+
+// .collapse:not(.show) {
+//   display: none !important;
+// }
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 500px; /* Elég nagy érték, hogy biztosan befogadja a tartalmat */
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    max-height: 500px;
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+.navbar-collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-out;
+}
+
+.navbar-collapse.show {
+  animation: slideDown 0.8s forwards;
+}
+
+.navbar-collapse.hide {
+  animation: slideUp 0.8s forwards;
+}
