@@ -1,0 +1,9 @@
+.madar-background {
+  background-image: url('/assets/madar-hatter.png'); /* Helyes elérési útvonal */
+  background-size: cover; /* Igazítás teljes méretre */
+  background-repeat: no-repeat; /* Ne ismétlődjön */
+  background-position: center center; /* Középre igazítás */
+  height: 100vh; /* Teljes képernyő magasság */
+  width: 100%; /* Teljes szélesség */
+  position: absolute;
+}
