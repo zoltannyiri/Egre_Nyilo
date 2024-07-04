@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { BackgroundComponent } from '../background/background.component';
 
 @Component({
-  selector: 'app-rolam',
+  selector: 'app-kapcsolat',
   standalone: true,
   imports: [BackgroundComponent],
-  templateUrl: './rolam.component.html',
-  styleUrl: './rolam.component.scss'
+  templateUrl: './kapcsolat.component.html',
+  styleUrl: './kapcsolat.component.scss'
 })
-export class RolamComponent {
+export class KapcsolatComponent {
 
 }

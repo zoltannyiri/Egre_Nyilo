@@ -1,18 +1,18 @@
   <!-- Hero -->
   <div class="navbar-wrapper">
     <div class="desktop-navbar" *ngIf="!isMobileView">
-      <div class="et-hero-tabs-upper bg-white navbar nav">
+      <div class="et-hero-tabs-upper navbar nav">
         <a [routerLink]="['/kezdolap']" routerLinkActive="router-link-active" class="">
           <div class="logo-cointainer justify-content-center">
-           <img src="assets/logo-szoveg.png" alt="Logó" class="logo-img justify-content-center">
+           <img src="assets/teszthatter.png" alt="Logó" class="logo-img justify-content-center" id="szoveglogo">
            <!-- <span class="logo-text">Égre Nyíló Mentálhigiénés Műhely</span> -->
           </div>
         </a>
-        <a class="et-hero-tab rounded" [routerLink]="['/kezdolap']">Kezdőlap</a>
-        <a class="et-hero-tab rounded" [routerLink]="['/rolam']">Rólam</a>
-        <a class="et-hero-tab rounded" href="#tab-react">Szolgáltatások</a>
-        <a class="et-hero-tab rounded" href="#tab-angular">Kapcsolat</a>
-        <a class="et-hero-tab rounded" href="#tab-other">Miért online?</a>
+        <a class="et-hero-tab rounded" [routerLink]="['/kezdolap']">KEZDŐLAP</a>
+        <a class="et-hero-tab rounded" [routerLink]="['/rolam']">RÓLAM</a>
+        <a class="et-hero-tab rounded" href="#tab-react">SZOLGÁLTATÁSOK</a>
+        <a class="et-hero-tab rounded" href="#tab-angular">KAPCSOLAT</a>
+        <a class="et-hero-tab rounded" href="#tab-other">MIÉRT ONLINE?</a>
         <span class="et-hero-tab-slider"></span>
       </div>
     </div>
@@ -22,7 +22,7 @@
   <div *ngIf="isMobileView" class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <a class="navbar-brand" [routerLink]="['/kezdolap']">
-        <img src="assets/logo-szoveg.png" alt="Logó" class="logo-img" width="50" height="50">
+        <img src="assets/teszthatter.png" alt="Logó" class="logo-img" width="50" height="50">
       </a>
       <button class="navbar-toggler" type="button" (click)="toggleMenu()" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
