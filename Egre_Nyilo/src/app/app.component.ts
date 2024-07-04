@@ -6,11 +6,15 @@ import { KezdolapComponent } from './pages/kezdolap/kezdolap.component';
 import { FormsModule } from '@angular/forms';
 import { BackgroundComponent } from './pages/background/background.component';
 import { RolamComponent } from './pages/rolam/rolam.component';
+import { SzolgaltatasokComponent } from './pages/szolgaltatasok/szolgaltatasok.component';
+import { KapcsolatComponent } from './pages/kapcsolat/kapcsolat.component';
+import { MiertOnlineComponent } from './pages/miert-online/miert-online.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, FooterComponent, KezdolapComponent, FormsModule, RouterLink, BackgroundComponent, RolamComponent],
+  imports: [RouterOutlet, NavbarComponent, FooterComponent, KezdolapComponent, FormsModule, RouterLink,
+    BackgroundComponent, RolamComponent, SzolgaltatasokComponent, KapcsolatComponent, MiertOnlineComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
