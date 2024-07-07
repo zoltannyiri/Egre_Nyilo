@@ -12,51 +12,38 @@
   display: block; /* Az elem körül elhelyezkedő margin összeomlásának megelőzése */
 }
 
-.overlay-text {
-  position: absolute;
-  font-family: 'EB Garamond';
-  font-size: 72px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(156, 156, 156);
-  text-align: center;
-  padding: 10px;
-  box-sizing: border-box;
-  width: 80%;
-}
 
-@media (max-width: 1180px) {
-  .overlay-text {
-    font-size: 50px; /* Kisebb betűméret a közepes képernyőknél */
-    width: 90%; /* Szélesség állítása közepes képernyőn */
-    bottom: 70px;
-  }
-}
+// @media (max-width: 1180px) {
+//   .overlay-text {
+//     font-size: 50px; /* Kisebb betűméret a közepes képernyőknél */
+//     width: 90%; /* Szélesség állítása közepes képernyőn */
+//     bottom: auto;
+//   }
+// }
 
-@media (max-width: 600px) {
-  .overlay-text {
-    top: auto;
-    bottom: 70px; /* Alulra igazítás */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%; /* Szélesség állítása kisebb képernyőn */
-    padding: 5px;
-    font-size: 48px; /* Kisebb betűméret a kisebb képernyőkön */
-  }
-}
+// @media (max-width: 600px) {
+//   .overlay-text {
+//     top: auto;
+//     bottom: auto; /* Alulra igazítás */
+//     left: 50%;
+//     transform: translateX(-50%);
+//     width: 90%; /* Szélesség állítása kisebb képernyőn */
+//     padding: 5px;
+//     font-size: 48px; /* Kisebb betűméret a kisebb képernyőkön */
+//   }
+// }
 
-@media (max-width: 450px) {
-  .overlay-text {
-    top: auto;
-    bottom: 40px; /* Alulra igazítás */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%; /* Szélesség állítása kisebb képernyőn */
-    padding: 5px;
-    font-size: 40px; /* Kisebb betűméret a kisebb képernyőkön */
-  }
-}
+// @media (max-width: 450px) {
+//   .overlay-text {
+//     top: auto;
+//     bottom: 40px; /* Alulra igazítás */
+//     left: 50%;
+//     transform: translateX(-50%);
+//     width: 90%; /* Szélesség állítása kisebb képernyőn */
+//     padding: 5px;
+//     font-size: 40px; /* Kisebb betűméret a kisebb képernyőkön */
+//   }
+// }
 
 
 // .image-container {

@@ -12,11 +12,16 @@
   display: block; /* Az elem körül elhelyezkedő margin összeomlásának megelőzése */
 }
 
+.body{
+  background-color: #fdeeee;
+}
+
 .overlay-text {
   position: absolute;
   font-family: 'EB Garamond';
-  font-size: 65px;
+  font-size: 5vw;
   top: 30%;
+  bottom: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(114, 113, 216);
@@ -24,6 +29,15 @@
   padding: 10px;
   box-sizing: border-box;
   width: 80%;
+}
+
+@media (min-width: 1181px) {
+  .overlay-text {
+    font-size: 65px; /* Kisebb betűméret a közepes képernyőknél */
+    width: 90%; /* Szélesség állítása közepes képernyőn */
+    top: 300px;
+    bottom: auto;
+  }
 }
 
 @media (max-width: 1180px) {

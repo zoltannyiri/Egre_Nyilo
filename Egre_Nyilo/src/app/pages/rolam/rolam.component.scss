@@ -1,0 +1,59 @@
+.image-container {
+  position: relative;
+  width: 100%; /* A kívánt szélesség */
+  height: 70vh; /* A kívánt magasság, pl. 50% a viewport magasságából */
+  overflow: hidden; /* Elrejti a felesleges részeket */
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* A kép méretének igazítása a teljes méretre */
+  display: block; /* Az elem körül elhelyezkedő margin összeomlásának megelőzése */
+}
+
+.overlay-text {
+  position: absolute;
+  font-family: 'EB Garamond';
+  font-size: 65px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(114, 113, 216);
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+@media (max-width: 1180px) {
+  .overlay-text {
+    font-size: 50px; /* Kisebb betűméret a közepes képernyőknél */
+    width: 90%; /* Szélesség állítása közepes képernyőn */
+    bottom: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .overlay-text {
+    top: auto;
+    bottom: 400px; /* Alulra igazítás */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Szélesség állítása kisebb képernyőn */
+    padding: 5px;
+    font-size: 48px; /* Kisebb betűméret a kisebb képernyőkön */
+  }
+}
+
+@media (max-width: 462px) {
+  .overlay-text {
+    top: auto;
+    bottom: 340px; /* Alulra igazítás */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Szélesség állítása kisebb képernyőn */
+    padding: 5px;
+    font-size: 40px; /* Kisebb betűméret a kisebb képernyőkön */
+  }
+}
