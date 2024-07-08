@@ -1,13 +1,14 @@
 .image-container {
   position: relative;
-  width: 100%; /* A kívánt szélesség */
+  width: 100vw; /* A kívánt szélesség */ //changed 07.08
   height: 70vh; /* A kívánt magasság, pl. 50% a viewport magasságából */
   overflow: hidden; /* Elrejti a felesleges részeket */
 }
 
 .background-image {
-  width: 100%;
-  height: 100%;
+  bottom: auto;
+  width: 100vw; //changed 07.08
+  height: 500px; //changed 07.08
   object-fit: cover; /* A kép méretének igazítása a teljes méretre */
   display: block; /* Az elem körül elhelyezkedő margin összeomlásának megelőzése */
 }
