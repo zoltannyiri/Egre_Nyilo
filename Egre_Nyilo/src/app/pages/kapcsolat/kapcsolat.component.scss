@@ -1,0 +1,39 @@
+.overlay-text {
+  position: absolute;
+  font-family: 'EB Garamond';
+  font-size: 3em; /* Például: 5em a szöveg méretéhez */
+  top: 30%;
+  bottom: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(114, 113, 216);
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.custom-bg {
+  width: 100vw; /* A kívánt szélesség */ //changed 07.08
+  height: 30vh; /* A kívánt magasság, pl. 50% a viewport magasságából */
+  overflow: hidden; /* Elrejti a felesleges részeket */
+  object-fit: cover; /* A kép méretének igazítása a teljes méretre */
+  display: block; /* Az elem körül elhelyezkedő margin összeomlásának megelőzése */
+}
+
+.hatterszin {
+  background-color: #fdeeee;
+
+  margin: 0; /* Győződj meg róla, hogy nincs margin a body-n */
+  padding: 0; /* Győződj meg róla, hogy nincs padding a body-n */
+  height: 100%; /* Biztosítja, hogy a háttérszín az egész oldalon érvényes legyen */
+}
+
+
+// .custom-bg {
+
+//   position: relative;
+//   width: 100vw; /* A kívánt szélesség */ //changed 07.08
+//   height: 700vh; /* A kívánt magasság, pl. 50% a viewport magasságából */
+//   overflow: hidden; /* Elrejti a felesleges részeket */
+// }

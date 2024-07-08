@@ -13,6 +13,13 @@
   display: block; /* Az elem körül elhelyezkedő margin összeomlásának megelőzése */
 }
 
+// .custom-bg {
+
+//   position: relative;
+//   width: 100vw; /* A kívánt szélesség */ //changed 07.08
+//   height: 30vh; /* A kívánt magasság, pl. 50% a viewport magasságából */
+//   overflow: hidden; /* Elrejti a felesleges részeket */
+// }
 
 // @media (max-width: 1180px) {
 //   .overlay-text {
