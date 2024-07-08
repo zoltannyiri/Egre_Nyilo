@@ -94,9 +94,6 @@
   display: block; /* Az elem körül elhelyezkedő margin összeomlásának megelőzése */
 }
 
-.body {
-  background-color: #fdeeee;
-}
 
 .overlay-text {
   position: absolute;
@@ -119,6 +116,14 @@
   position: relative;
   left: 45%;
 }
+
+.hatterszin {
+  background-color: #fdeeee;
+  margin: 0; /* Győződj meg róla, hogy nincs margin a body-n */
+  padding: 0; /* Győződj meg róla, hogy nincs padding a body-n */
+  height: 100%; /* Biztosítja, hogy a háttérszín az egész oldalon érvényes legyen */
+}
+
 
 /* Reszponzív beállítások */
 @media (min-width: 1181px) {
