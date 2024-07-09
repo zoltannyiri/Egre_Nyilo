@@ -11,7 +11,9 @@
   height: 500px; //changed 07.08
   object-fit: cover; /* A kép méretének igazítása a teljes méretre */
   display: block; /* Az elem körül elhelyezkedő margin összeomlásának megelőzése */
+  opacity: 0.5;
 }
+
 
 // .custom-bg {
 

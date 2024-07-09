@@ -6,34 +6,49 @@
 <div class="hatterszin">
   <div class="container">
     <form id="emailForm">
+      <br>
+      <div class="kapcsolatszoveg w-50">
+        <p>
+          Legegyszerűbb mód a kapcsolatfelvételre, ha felhívsz telefonon:<br>06 7dasasd08.<br>
+          Ha nem tudom felvenni, amint tudlak, vissza foglak hívni.<br>
+          Vagy töltsd ki ezt az űrlapot, és leveledre egy napon belül válaszolni fogok.
+        </p>
+      </div>
+
         <div class="row mb-3">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <label for="name" class="form-label"></label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="Az Ön teljes neve" required>
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <label for="email" class="form-label"></label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="E-mail címe" required>
-            </div>
+            </div> -->
         </div>
         <div class="row mb-3">
-            <div class="col-md-3">
+          <div class="col-md-4">
+            <label for="email" class="form-label"></label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail címe" required>
+        </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4">
                 <label for="phone" class="form-label"></label>
                 <input type="tel" class="form-control" id="phone" name="phone" placeholder="Telefonszáma" required>
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <label for="subject" class="form-label"></label>
                 <input type="text" class="form-control" id="subject" name="subject" placeholder="Üzenet tárgya" required>
-            </div>
+            </div> -->
         </div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <label for="message" class="form-label"></label>
-                <textarea class="form-control" id="message" name="message" placeholder="Megjegyzés" rows="3" required></textarea>
+                <textarea class="form-control" id="message" name="message" placeholder="Üzenet" rows="3" required></textarea>
             </div>
         </div>
         <br>
-        <button style="background-color: gold; color: black; font-family: 'Garamond'; font-size: larger; border-color: black;" class="btn btn-primary mb-3" type="button" onclick="sendEmail()">Küldés</button>
+        <button class="senderbutton">Küldés</button>
 
     </form>
 </div>
