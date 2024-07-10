@@ -1,8 +1,14 @@
 .image-container {
+  background-image: url("/assets/hatter.png");
   position: relative;
   width: 100vw; /* A kívánt szélesség */ //changed 07.08
-  height: 70vh; /* A kívánt magasság, pl. 50% a viewport magasságából */
-  overflow: hidden; /* Elrejti a felesleges részeket */
+  // height: 500px; /* A kívánt magasság, pl. 50% a viewport magasságából */
+  // overflow: hidden; /* Elrejti a felesleges részeket */
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .background-image {

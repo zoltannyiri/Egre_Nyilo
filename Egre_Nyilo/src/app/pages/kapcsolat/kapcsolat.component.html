@@ -5,7 +5,7 @@
 </app-background>
 <div class="hatterszin">
   <div class="container">
-    <form id="emailForm">
+    <div id="emailForm">
       <br>
       <div class="kapcsolatszoveg w-50">
         <p>
@@ -18,7 +18,7 @@
         <div class="row mb-3">
             <div class="col-md-4">
                 <label for="name" class="form-label"></label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Az Ön teljes neve" required>
+                <input (change)="changer($event, 'name')" type="text" class="form-control" id="name" name="name" placeholder="Az Ön teljes neve" required>
             </div>
             <!-- <div class="col-md-3">
                 <label for="email" class="form-label"></label>
@@ -28,13 +28,13 @@
         <div class="row mb-3">
           <div class="col-md-4">
             <label for="email" class="form-label"></label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail címe" required>
+            <input (change)="changer($event, 'email')" type="email" class="form-control" id="email" name="email" placeholder="E-mail címe" required>
         </div>
         </div>
         <div class="row mb-3">
             <div class="col-md-4">
                 <label for="phone" class="form-label"></label>
-                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Telefonszáma" required>
+                <input (change)="changer($event, 'phone')" type="tel" class="form-control" id="phone" name="phone" placeholder="Telefonszáma" required>
             </div>
             <!-- <div class="col-md-3">
                 <label for="subject" class="form-label"></label>
@@ -44,13 +44,13 @@
         <div class="row">
             <div class="col-md-4">
                 <label for="message" class="form-label"></label>
-                <textarea class="form-control" id="message" name="message" placeholder="Üzenet" rows="3" required></textarea>
+                <textarea (change)="changer($event, 'text')" class="form-control" id="message" name="message" placeholder="Üzenet" rows="3" required></textarea>
             </div>
         </div>
         <br>
-        <button class="senderbutton">Küldés</button>
+        <button type="submit" class="senderbutton" (click)="sender()">Küldés</button>
 
-    </form>
+    </div>
 </div>
 <br><br><br><br><br><br><br><br><br>
 </div>
