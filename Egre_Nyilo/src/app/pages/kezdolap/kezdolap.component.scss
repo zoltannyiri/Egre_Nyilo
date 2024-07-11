@@ -123,6 +123,15 @@
   height: 100%; /* Biztosítja, hogy a háttérszín az egész oldalon érvényes legyen */
 }
 
+.kezdolap-text {
+  // width: 80%;
+  padding: 10px;
+  // text-align: center;
+  // // justify-content: center;
+  // // align-items: center;
+  // display: flex;
+}
+
 
 /* Reszponzív beállítások */
 @media (min-width: 1181px) {
