@@ -34,6 +34,28 @@ export class KapcsolatComponent {
       });
   }
 
+  // sender2() {
+  //   const data = {
+  //     text: 'szövegszöveg'
+  //   }
+  //   fetch("https://brass-loud-whip.glitch.me/email", {
+  //     method: "POST", // or 'PUT'
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(this.data),
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       alert("Sikeres e-mail küldés!");
+
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error:", error);
+  //       alert("A funkció jelenleg nem elérhető!");
+  //     });
+  // }
+
   data:any = {
   }
 
