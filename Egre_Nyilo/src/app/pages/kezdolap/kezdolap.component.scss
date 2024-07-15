@@ -97,7 +97,7 @@
 
 .overlay-text {
   font-family: 'EB Garamond';
-  font-size: 5em; /* Például: 5em a szöveg méretéhez */
+  font-size: 3em; /* Például: 5em a szöveg méretéhez */
   // top: 30%;
   // bottom: 40%;
   // left: 50%;
@@ -110,10 +110,11 @@
 }
 
 #kezdolap-logo {
-  width: 5em; /* A kép szélessége em egységekben */
+  width: 3em; /* A kép szélessége em egységekben */
   height: auto; /* A kép magassága automatikusan igazodik a szélességhez */
   position: relative;
   left: 45%;
+  justify-content: center;
 }
 
 .hatterszin {
@@ -134,59 +135,59 @@
 
 
 /* Reszponzív beállítások */
-@media (min-width: 1181px) {
-  .overlay-text {
-    font-size: 3em; /* Kisebb betűméret a közepes képernyőknél */
-    width: 90%; /* Szélesség állítása közepes képernyőn */
-    top: 300px;
-    bottom: auto;
-  }
+// @media (min-width: 1181px) {
+//   .overlay-text {
+//     font-size: 3em; /* Kisebb betűméret a közepes képernyőknél */
+//     width: 90%; /* Szélesség állítása közepes képernyőn */
+//     top: 300px;
+//     bottom: auto;
+//   }
 
-  #kezdolap-logo {
-    width: 3em; /* A kép szélessége em egységekben */
-  }
-}
+//   #kezdolap-logo {
+//     width: 3em; /* A kép szélessége em egységekben */
+//   }
+// }
 
-@media (max-width: 1180px) {
-  .overlay-text {
-    font-size: 3em; /* Kisebb betűméret a közepes képernyőknél */
-    width: 90%; /* Szélesség állítása közepes képernyőn */
-    bottom: 450px;
-  }
+// @media (max-width: 1180px) {
+//   .overlay-text {
+//     font-size: 3em; /* Kisebb betűméret a közepes képernyőknél */
+//     width: 90%; /* Szélesség állítása közepes képernyőn */
+//     bottom: 450px;
+//   }
 
-  #kezdolap-logo {
-    width: 2em; /* A kép szélessége em egységekben */
-  }
-}
+//   #kezdolap-logo {
+//     width: 2em; /* A kép szélessége em egységekben */
+//   }
+// }
 
-@media (max-width: 600px) {
-  .overlay-text {
-    top: auto;
-    bottom: 400px; /* Alulra igazítás */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%; /* Szélesség állítása kisebb képernyőn */
-    padding: 5px;
-    font-size: 1.5em; /* Kisebb betűméret a kisebb képernyőkön */
-  }
+// @media (max-width: 600px) {
+//   .overlay-text {
+//     top: auto;
+//     bottom: 400px; /* Alulra igazítás */
+//     left: 50%;
+//     transform: translateX(-50%);
+//     width: 90%; /* Szélesség állítása kisebb képernyőn */
+//     padding: 5px;
+//     font-size: 1.5em; /* Kisebb betűméret a kisebb képernyőkön */
+//   }
 
-  #kezdolap-logo {
-    width: 1.5em; /* A kép szélessége em egységekben */
-  }
-}
+//   #kezdolap-logo {
+//     width: 1.5em; /* A kép szélessége em egységekben */
+//   }
+// }
 
-@media (max-width: 462px) {
-  .overlay-text {
-    top: auto;
-    bottom: 340px; /* Alulra igazítás */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%; /* Szélesség állítása kisebb képernyőn */
-    padding: 5px;
-    font-size: 1.2em; /* Kisebb betűméret a kisebb képernyőkön */
-  }
+// @media (max-width: 462px) {
+//   .overlay-text {
+//     top: auto;
+//     bottom: 340px; /* Alulra igazítás */
+//     left: 50%;
+//     transform: translateX(-50%);
+//     width: 90%; /* Szélesség állítása kisebb képernyőn */
+//     padding: 5px;
+//     font-size: 1.2em; /* Kisebb betűméret a kisebb képernyőkön */
+//   }
 
-  #kezdolap-logo {
-    width: 1.2em; /* A kép szélessége em egységekben */
-  }
-}
+//   #kezdolap-logo {
+//     width: 1.2em; /* A kép szélessége em egységekben */
+//   }
+// }
