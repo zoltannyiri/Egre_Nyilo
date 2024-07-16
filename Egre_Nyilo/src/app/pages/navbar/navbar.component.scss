@@ -122,7 +122,8 @@ a {
   top: 0;
   width: 100%;
   // background-color: #fdeeee; /* navbar háttérszín */
-  background-color: white;
+  // background-color: white;
+  background-image: linear-gradient(#ffffff, #44caff );
   z-index: 1000; /* Ha más elemek kerülnek rá, akkor ez biztosítja, hogy a sáv felül legyen */
 }
 
