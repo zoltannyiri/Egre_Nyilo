@@ -121,6 +121,7 @@
 
 .hatterszin {
   // background-color: #fdeeee;
+  background-image: linear-gradient(#015847, #06ac8b, #68cbf3, #bfeafb);
   margin: 0; /* Győződj meg róla, hogy nincs margin a body-n */
   padding-top: 7rem; /* Győződj meg róla, hogy nincs padding a body-n */
   height: 100%; /* Biztosítja, hogy a háttérszín az egész oldalon érvényes legyen */
@@ -142,7 +143,7 @@
 .type1{
   font-size: 22px;
   font-family: 'Garamond';
-  color: rgb(101, 101, 101);
+  color: black;
   // text-align: justify;
 } 
 
@@ -158,6 +159,15 @@
 #type1-2{
   font-size: 20px;
   text-align: justify;
+}
+
+.madar{
+  width: 35rem;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  // border-radius: 50%;
+  border-radius: 15%;
 }
 
 #question{
