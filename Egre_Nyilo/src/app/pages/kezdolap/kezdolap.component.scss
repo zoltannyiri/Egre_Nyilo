@@ -96,13 +96,14 @@
 
 
 .overlay-text {
-  font-family: 'EB Garamond';
+  font-family: 'Garamond';
   font-size: 3em; /* Például: 5em a szöveg méretéhez */
   // top: 30%;
   // bottom: 40%;
   // left: 50%;
   // transform: translate(-50%, -50%);
-  color: rgb(114, 113, 216);
+  // color: rgb(114, 113, 216);
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
@@ -115,10 +116,11 @@
   position: relative;
   left: 45%;
   justify-content: center;
+  color: white;
 }
 
 .hatterszin {
-  background-color: #fdeeee;
+  // background-color: #fdeeee;
   margin: 0; /* Győződj meg róla, hogy nincs margin a body-n */
   padding-top: 7rem; /* Győződj meg róla, hogy nincs padding a body-n */
   height: 100%; /* Biztosítja, hogy a háttérszín az egész oldalon érvényes legyen */
@@ -127,10 +129,46 @@
 .kezdolap-text {
   // width: 80%;
   padding: 10px;
+  width: 100%;
+  max-width: 65rem;
+  margin: 0 auto;
+  text-align: justify;
   // text-align: center;
   // // justify-content: center;
   // // align-items: center;
   // display: flex;
+}
+
+.type1{
+  font-size: 22px;
+  font-family: 'Garamond';
+  color: rgb(101, 101, 101);
+  // text-align: justify;
+} 
+
+#kezdoszoveg{
+  text-align: justify;
+}
+
+#type1-1{
+  color: black;
+  text-align: justify;
+}
+
+#type1-2{
+  font-size: 20px;
+  text-align: justify;
+}
+
+#question{
+  font-size: 28px;
+  color: black;
+  
+}
+
+#vikar{
+  color: black;
+  text-align: center;
 }
 
 

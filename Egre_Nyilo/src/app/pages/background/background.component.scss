@@ -1,25 +1,41 @@
 .image-container {
   background-image: url("/assets/hatter.png");
   position: relative;
-  width: 100vw; /* A kívánt szélesség */ //changed 07.08
-  // height: 500px; /* A kívánt magasság, pl. 50% a viewport magasságából */
-  // overflow: hidden; /* Elrejti a felesleges részeket */
+  width: 100vw; /* A kívánt szélesség */
+  // height: 500px; /* Adj meg egy magasságot, ha szükséges */
   display: flex;
-  justify-items: center;
   justify-content: center;
+  align-items: center; /* Igazítás középre */
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover; /* Biztosítja, hogy a kép kitöltse a konténert, anélkül hogy összenyomódna */
+  // background-position: center 10%; /* Beállíthatod a kívánt kezdőpozíciót */
+  overflow: hidden; /* Elrejti a felesleges részeket */
+  background-attachment: fixed;
 }
 
-.background-image {
-  bottom: auto;
-  width: 100vw; //changed 07.08
-  height: 500px; //changed 07.08
-  object-fit: cover; /* A kép méretének igazítása a teljes méretre */
-  display: block; /* Az elem körül elhelyezkedő margin összeomlásának megelőzése */
-  opacity: 0.5;
-}
+// .image-container {
+//   background-image: url("/assets/hatter.png");
+//   position: relative;
+//   width: 100vw; /* A kívánt szélesség */ //changed 07.08
+//   // height: 500px; /* A kívánt magasság, pl. 50% a viewport magasságából */
+//   // overflow: hidden; /* Elrejti a felesleges részeket */
+//   display: flex;
+//   justify-items: center;
+//   justify-content: center;
+//   background-repeat: no-repeat;
+//   background-size: 100%;
+//   background-position: center 10%;
+// }
 
+// .background-image {
+//   bottom: auto;
+//   width: 100vw; //changed 07.08
+//   height: 500px; //changed 07.08
+//   object-fit: cover; /* A kép méretének igazítása a teljes méretre */
+//   display: block; /* Az elem körül elhelyezkedő margin összeomlásának megelőzése */
+//   // opacity: 1;
+//   // position: absolute;
+// }
 
 // .custom-bg {
 
