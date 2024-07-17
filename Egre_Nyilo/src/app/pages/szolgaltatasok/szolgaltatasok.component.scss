@@ -1,14 +1,116 @@
 .overlay-text {
-  font-family: 'EB Garamond';
-  font-size: 5em; /* Például: 5em a szöveg méretéhez */
-  // top: 30%;
-  // bottom: 40%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  color: rgb(114, 113, 216);
+  font-family: 'Garamond';
+  font-size: 3em; /* Például: 5em a szöveg méretéhez */
+  color: white;
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
   width: 100%;
   margin-top: 7rem;
+}
+
+.custom-bg {
+  width: 100vw; /* A kívánt szélesség */
+  height: 30vh; /* A kívánt magasság, pl. 50% a viewport magasságából */
+  overflow: hidden; /* Elrejti a felesleges részeket */
+  object-fit: cover; /* A kép méretének igazítása a teljes méretre */
+  display: block; /* Az elem körül elhelyezkedő margin összeomlásának megelőzése */
+}
+
+.hatterszin {
+  background-image: linear-gradient(#007c63, #06ac8b, #68cbf3, #bfeafb);
+  margin: 0; /* Győződj meg róla, hogy nincs margin a body-n */
+  padding: 0; /* Győződj meg róla, hogy nincs padding a body-n */
+  height: 100%; /* Biztosítja, hogy a háttérszín az egész oldalon érvényes legyen */
+}
+
+.szolg-text {
+  font-family: 'Garamond';
+  padding: 10px;
+  width: 80%;
+  max-width: 65rem;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 22px;
+}
+
+.elso {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+}
+
+// .masodik {
+//   /* Kép szélessége kisebb szélesség esetén */
+// }
+
+.row {
+  display: flex;
+  flex-direction: column; /* Alapértelmezett függőleges elrendezés */
+}
+
+.column {
+  justify-content: center;
+  text-align: justify;
+  padding: 10px 0; /* További stílusok az oszlophoz */
+}
+
+@media (min-width: 690px) {
+  .row {
+    flex-direction: row; /* Vízszintes elrendezés */
+  }
+
+  .elso {
+    flex: 65; /* Szöveg szélessége */
+    order: 0; /* Szöveg első helyen */
+    padding: 10px; /* Szükséges padding */
+  }
+
+  .masodik {
+    flex: 35; /* Kép szélessége */
+    order: 1; /* Kép második helyen */
+    padding: 10px; /* Szükséges padding */
+  }
+}
+
+@media (max-width: 689px) {
+  .row {
+    flex-direction: column; /* Függőleges elrendezés */
+  }
+
+  .elso {
+    order: 1; /* Szöveg második helyen */
+  }
+  .masodik {
+    order: 0; /* Kép első helyen */
+  }
+}
+
+.egyeni {
+  width: 80%; /* width beállítása 100%-ra */
+  max-width: 20rem;
+  border-radius: 20%; /* Ha mégis szükséges */
+  margin: 0 auto; /* középre igazítás */
+  display: block;
+}
+
+.szules {
+  width: 80%; /* width beállítása 100%-ra */
+  max-width: 20rem;
+  border-radius: 20%; /* Ha mégis szükséges */
+  margin: 0 auto; /* középre igazítás */
+  display: block;
+}
+
+.eves {
+  width: 80%; /* width beállítása 100%-ra */
+  // max-width: 20rem;
+  border-radius: 20%; /* Ha mégis szükséges */
+  margin: 0 auto; /* középre igazítás */
+  display: block;
+}
+
+.szolg-cim{
+  font-size: 2rem;
+  color: black;
+  text-align: center;
 }
