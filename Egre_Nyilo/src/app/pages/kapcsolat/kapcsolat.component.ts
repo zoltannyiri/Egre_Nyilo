@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { BackgroundComponent } from '../background/background.component';
 
+
 @Component({
   selector: 'app-kapcsolat',
   standalone: true,
@@ -33,6 +34,12 @@ export class KapcsolatComponent {
         alert("A funkció jelenleg nem elérhető!");
       });
   }
+
+  
+
+  
+
+
 
   // sender2() {
   //   const data = {

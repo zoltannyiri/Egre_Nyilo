@@ -181,6 +181,15 @@
   text-align: center;
 }
 
+@media (max-width: 452px) {
+  .overlay-text{
+    margin-top: 60px;
+  }
+  .custom-bg{
+    margin-top: 90px;
+  }
+}
+
 
 /* Reszponzív beállítások */
 // @media (min-width: 1181px) {

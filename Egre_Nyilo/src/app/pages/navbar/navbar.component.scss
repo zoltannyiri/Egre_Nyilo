@@ -1,6 +1,3 @@
-body {
-		font-family: "Century Gothic", 'Lato', sans-serif;
-}
 
 a {
 	text-decoration: none;
@@ -14,7 +11,7 @@ a {
     align-items: center;
     height: 100vh;
     position: relative;
-    background: #eee;
+    // background: #eee;
 		text-align: center;
 		padding: 0 2em;
     h1 {
@@ -37,7 +34,7 @@ a {
     width: 100%;
     height: 70px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background: #fff;
+    // background: #fff;
     z-index: 10;
     &--top {
         position: fixed;
@@ -56,8 +53,6 @@ a {
 		font-size: 0.8rem;
 	  &:hover {
 			color:rgb(255, 0, 0);
-      // background: rgba(102,177,241,0.8);
-      background: #fdeeee;
 			transition: all 0.5s ease;
     }
 }
@@ -67,7 +62,7 @@ a {
     bottom: 0;
     width: 0;
     height: 6px;
-    background: #66B1F1;
+    // background: #66B1F1;
     transition: left 0.3s ease;
 }
 
@@ -100,8 +95,8 @@ a {
   left: -100%; /* Elrejtjük alapértelmezetten */
   width: 200px; /* Változtathatod a menü szélességét */
   transition: left 0.3s ease; /* Animáció hozzáadása */
-  background-color: #f8f9fa; /* Háttérszín */
-  border: 1px solid #dee2e6; /* Keret */
+  // background-color: #f8f9fa; /* Háttérszín */
+  // border: 1px solid #dee2e6; /* Keret */
   padding: 10px; /* Belső tér */
 }
 
@@ -117,13 +112,26 @@ a {
   display: none; // Alapértelmezetten nem jelenik meg mobil nézetben
 }
 
+@media(min-width: 453) {
+  .navbar{
+    background-image: linear-gradient(#ffffff, #44caff );
+  }
+}
+
+@media (max-width: 452) {
+  .navbar{
+
+    background-image: linear-gradient(#bbecff, #4dcdff );
+  }
+}
+
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  // background-color: #fdeeee; /* navbar háttérszín */
-  // background-color: white;
-  background-image: linear-gradient(#ffffff, #44caff );
+  background-image: linear-gradient(#44caff,#ffffff  );
+  // background-image: linear-gradient(#bbecff, #4dcdff );
+  
   z-index: 1000; /* Ha más elemek kerülnek rá, akkor ez biztosítja, hogy a sáv felül legyen */
 }
 
@@ -158,44 +166,17 @@ a {
   margin-left: 10px; /* Távolság a logótól */
 }
 
-#mobilhatter {
-  background-color: #fdeeee;
-  background: #fdeeee;
-}
+// #mobilhatter {
+//   // background-color: #fdeeee;
+// }
 
 .navbar-nav {
-  background-color: #fdeeee;
-  background: #fdeeee;
+  // background-color: #fdeeee;
+  // background: #fdeeee;
+  background-image: linear-gradient(#bbecff, #4dcdff );
 }
 
-//menü lenyílásának animációjaű
 
-// @keyframes slideDown {
-//   0% {
-//     transform: translateY(-50%);
-//     opacity: 0;
-//   }
-//   100% {
-//     transform: translateY(0);
-//     opacity: 1;
-//   }
-// }
-
-// .navbar-nav {
-//   height: 30vh; /* A teljes képernyő magassága */
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center; /* Középre igazítás függőlegesen */
-//   align-items: center; /* Középre igazítás vízszintesen */
-// }
-
-// .navbar-collapse {
-//   animation: slideDown 0.5s ease-in-out;
-// }
-
-// .collapse:not(.show) {
-//   display: none !important;
-// }
 
 @keyframes slideDown {
   from {
@@ -233,11 +214,14 @@ a {
   animation: slideUp 0.8s forwards;
 }
 
-// .navbar-expand-lg{
-//   margin-right: 5px;
-// }
 
-
-@media (max-width: 445) {
-
+@media (max-width: 452) {
+  
+  .navbar{
+    background-image: linear-gradient(#1a2124, #4bccff );
+  }
+  .navbar-nav{
+    background-image: linear-gradient(#1a2124, #4bccff );
+  }
+  
 }
