@@ -31,6 +31,35 @@
   height: 100%; /* Biztosítja, hogy a háttérszín az egész oldalon érvényes legyen */
 }
 
+.elso {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+}
+
+
+.row {
+  display: flex;
+  flex-direction: column; /* Alapértelmezett függőleges elrendezés */
+}
+
+.column {
+  width: 100%;
+  justify-content: center;
+  text-align: justify;
+  padding: 10px 0; /* További stílusok az oszlophoz */
+}
+
+/* Ha a szélesség 690px felett van, két oszlopos elrendezés */
+@media (min-width: 690px) {
+  .row {
+    flex-direction: row; /* Vízszintes elrendezés */
+  }
+
+  .masodik{
+    width: 100%;
+  }
+}
+
 .senderbutton{
   align-items: center;
   background: #FFFFFF;
