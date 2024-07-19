@@ -10,6 +10,8 @@ import { BackgroundComponent } from '../background/background.component';
   styleUrl: './kapcsolat.component.scss'
 })
 export class KapcsolatComponent {
+document: any;
+checked: any;
   sender() {
     const data = {
       name: 'bármi',
@@ -35,9 +37,9 @@ export class KapcsolatComponent {
       });
   }
 
-  
 
-  
+
+
 
 
 
