@@ -9,12 +9,13 @@ import { RolamComponent } from './pages/rolam/rolam.component';
 import { SzolgaltatasokComponent } from './pages/szolgaltatasok/szolgaltatasok.component';
 import { KapcsolatComponent } from './pages/kapcsolat/kapcsolat.component';
 import { MiertOnlineComponent } from './pages/miert-online/miert-online.component';
+import { ArakComponent } from './pages/arak/arak.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, NavbarComponent, FooterComponent, KezdolapComponent, FormsModule, RouterLink,
-    BackgroundComponent, RolamComponent, SzolgaltatasokComponent, KapcsolatComponent, MiertOnlineComponent],
+    BackgroundComponent, RolamComponent, SzolgaltatasokComponent, KapcsolatComponent, MiertOnlineComponent, ArakComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
