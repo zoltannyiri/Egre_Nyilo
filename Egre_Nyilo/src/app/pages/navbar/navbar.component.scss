@@ -131,7 +131,7 @@ a {
   width: 100%;
   background-image: linear-gradient(#44caff,#ffffff  );
   // background-image: linear-gradient(#bbecff, #4dcdff );
-  
+
   z-index: 1000; /* Ha más elemek kerülnek rá, akkor ez biztosítja, hogy a sáv felül legyen */
 }
 
@@ -216,12 +216,12 @@ a {
 
 
 @media (max-width: 452) {
-  
+
   .navbar{
     background-image: linear-gradient(#1a2124, #4bccff );
   }
   .navbar-nav{
     background-image: linear-gradient(#1a2124, #4bccff );
   }
-  
+
 }
