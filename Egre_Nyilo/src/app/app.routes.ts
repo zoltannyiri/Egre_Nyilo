@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { ExtraOptions, Routes } from '@angular/router';
 import { KezdolapComponent } from './pages/kezdolap/kezdolap.component';
 import { RolamComponent } from './pages/rolam/rolam.component';
 import { SzolgaltatasokComponent } from './pages/szolgaltatasok/szolgaltatasok.component';
@@ -17,4 +17,11 @@ export const routes: Routes = [
   {'path': 'arak', component: ArakComponent },
   {'path': '**', redirectTo: '/kezdolap', pathMatch: 'full'}
 ];
+
+
+
+const routerOptions: ExtraOptions = {
+  anchorScrolling: 'enabled', // Engedélyezi az anchor scrollingot
+  scrollPositionRestoration: 'enabled' // Emlékezik a görgetési pozícióra
+};
 

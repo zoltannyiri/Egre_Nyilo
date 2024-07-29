@@ -1,0 +1,106 @@
+<app-background class="custom-bg">
+  <div class="overlay-text custom-bg" >
+    <p>Árak, információk</p>
+  </div>
+</app-background>
+
+<div class="hatterszin">
+  <br>
+  <div class="arak-text">
+    <div class="egyeni">
+      <p class="egyeni-cim"><b>Egyéni konzultáció</b></p>
+      <br>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <!-- <h3><img src="/assets/sziv.png" alt="sziv" class="sziv"></h3> -->
+            <br>
+            <ul class="lista">
+              <li><b>Online:</b> 10.000 Ft</li>
+              <li><b>Személyesen Tapolcán:</b> 10.000 Ft</li>
+              <li><b>Személyesen Győrben:</b> 12.000 Ft<br>(jelenleg Győrben csak hétfői napokon elérhető)</li>
+            </ul>
+            <br>
+            <p class="berlet">A 60 perces, egyéni konzultációk esetében lehetőség van egyösszegű bérletvásárlásra.  Így 4 találkozó díja 5 alkalmat fed le.</p>
+            <hr>
+            <p class="time"><b>60 PERC</b></p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <!-- <h3><img src="/assets/sziv.png" alt="sziv" class="sziv"></h3> -->
+            <br>
+            <ul class="lista">
+              <li><b>Online:</b> 15.000 Ft</li>
+              <li><b>Személyesen Tapolcán:</b> 15.000 Ft</li>
+              <li><b>Személyesen Győrben:</b> 17.000 Ft<br>(jelenleg Győrben csak hétfői napokon elérhető)</li>
+            </ul>
+            <br>
+            <p class="berlet">A hosszabb alkalmakat azoknak javaslom, akik úgy érzik, nagy krízisben vannak, és az egyórás találkozó kevés lenne a helyzet vizsgálatára,
+              a probléma átbeszélésére. Azoknak is jó, akik inkább kevesebb alkalommal jönnének, de hosszabb időtartamra.</p>
+              <hr>
+            <p class="time"><b>90 PERC</b></p>
+          </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+
+
+    <div class="csoport">
+      <p class="csoport-cim"><b>Csoportalkalmak</b></p><br>
+      <div class="csoport-szoveg">
+        <p>A csoportok a <b>jelentkezők számától függően</b> indulnak. Egy alkalom hossza 90 perc.<br>
+          Mindegyik csoporttípus részvételi díja alkalmanként 8.000 Ft/fő.
+          Jelenleg háromféle csoport fut: <br></p>
+          <ul>
+            <li [routerLink]="['/szolgaltatasok']" routerLinkActive="router-link-active" fragment="szulesfeldolgozo"><b>&bullet; szülésfeldolgozó csoport</b>,</li>
+            <li [routerLink]="['/szolgaltatasok']" routerLinkActive="router-link-active" fragment="erzelmi"><b>&bullet; érzelmi evés csoport</b>,</li>
+            <li [routerLink]="['/szolgaltatasok']" routerLinkActive="router-link-active" fragment="egyedulallo"><b>&bullet; önismereti csoport egyedülálló szülőknek</b>.</li>
+          </ul><br>
+          <p class="egyedulallo"><b>Egyedülálló szülők számára az egyéni, online konzultáció kedvezményes ára 8.000 Ft.</b></p>
+      </div>
+    </div><br><br>
+
+    <div class="reszletek">
+      <div class="lemondasi-text">
+        <p class="lemondasi-cim"><b>Lemondási szabályzat</b></p>
+        <p>&bullet; Ha mégsem tudsz megjelenni a konzultáción, engedjük át az időpontot másnak, akinek épp szüksége lenne rá! Ha 24 órán belül mondod le,
+          a konzultációt ugyanúgy ki kell fizetni. Kérlek, minél hamarabb jelezd, ha mégsem tudsz részt venni, hogy át tudjuk ütemezni az időpontot!
+        </p><br>
+
+        <p class="lemondasi-cim"><b>Az online találkozó feltételei</b></p>
+        <p>&bullet; Legyen stabil internetkapcsolat, és olyan helyszínen legyél, ahol nem zavar senki és semmi! Akár a parkoló autódban, munkahelyeden, otthon -
+          engem nem az érdekel, hogy mit látok mögötted a képernyőn, hanem az, hogy zavartalanul tudjunk beszélgetni! :) Legyél egyedül egy nyugodt helyen,
+          ahol senki sem hall téged.
+          A találkozó platformját egyénileg megbeszéljük, kinek mi a legideálisabb.
+          </p><br>
+
+        <p class="lemondasi-cim"><b>Milyen gyakoriak a találkozók?</b></p>
+        <p>&bullet; Ezt te döntöd el. Élethelyzettől, krízistől függően heti, kétheti találkozást javaslok, de menet közben is megvizsgálhatjuk, és eldönthetjük együtt, mire van szükséged. Az, hogy egy folyamat meddig tart, egyénileg változik. Először 5 alkalmat szoktam javasolni, de van, akinek már 3 alkalom is elég. Előfordul, hogy hosszabb ideig kísérlek, ezt majd látni fogjuk együtt.
+        </p><br>
+
+        <p class="lemondasi-cim"><b>Mit nem tudok vállalni?</b></p>
+        <p>&bullet; Nem írok fel gyógyszert, nem állítok ki diagnózist. Ez pszichiátriai hatáskör. Ha úgy érzem, kompetenciáim határára érek, és olyan problémával találkozom,
+          amely orvost vagy pszihoterápiát igényel, tovább foglak irányítani. 18 év alatti klienseket szülői beleegyező nyilatkozattal tudok vállalni.
+          Öngyilkossági krízis esetén kérj segítséget azonnal például ezen a linken:
+          <a href="https://ppk.elte.hu/tanacsado/sos" target="_blank">https://ppk.elte.hu/tanacsado/sos</a>
+          </p><br>
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+</div>
