@@ -53,6 +53,7 @@
 @media (min-width: 690px) {
   .row {
     flex-direction: row; /* Vízszintes elrendezés */
+    text-align: justify;
   }
 
   .masodik{
@@ -89,6 +90,7 @@
   font-family: 'Garamond';
   font-size: 22px;
   color: #000000;
+  text-align: justify;
 }
 
 @media (max-width: 452px) {
@@ -121,3 +123,16 @@
 //   width: 2em;
 //   vertical-align: middle;
 // }
+
+.profil{
+  width: 50%;
+  border-radius: 30%;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.teszthatter{
+  width: 50%;
+  transform: scaleX(0.9);
+}
