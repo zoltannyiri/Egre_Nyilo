@@ -1,12 +1,6 @@
-
 .overlay-text {
   font-family: 'Garamond';
   font-size: 3em; /* Például: 5em a szöveg méretéhez */
-  // top: 30%;
-  // bottom: 40%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  // color: rgb(114, 113, 216);
   color: white;
   text-align: center;
   padding: 10px;
@@ -16,7 +10,7 @@
 }
 
 .custom-bg {
-  width: 100vw; /* A kívánt szélesség */ //changed 07.08
+  width: 100vw; /* A kívánt szélesség */
   height: 30vh; /* A kívánt magasság, pl. 50% a viewport magasságából */
   overflow: hidden; /* Elrejti a felesleges részeket */
   object-fit: cover; /* A kép méretének igazítása a teljes méretre */
@@ -24,7 +18,6 @@
 }
 
 .hatterszin {
-  // background-image: linear-gradient(#015847, #06ac8b, #68cbf3, #bfeafb);
   background-image: linear-gradient(#007c63, #06ac8b, #68cbf3, #bfeafb);
   margin: 0; /* Győződj meg róla, hogy nincs margin a body-n */
   padding: 0; /* Győződj meg róla, hogy nincs padding a body-n */
@@ -35,7 +28,6 @@
   font-size: 22px;
   color: rgb(0, 0, 0);
 }
-
 
 .row {
   display: flex;
@@ -49,19 +41,19 @@
   padding: 10px 0; /* További stílusok az oszlophoz */
 }
 
-/* Ha a szélesség 690px felett van, két oszlopos elrendezés */
-@media (min-width: 690px) {
+/* Ha a szélesség 900px felett van, két oszlopos elrendezés */
+@media (min-width: 900px) {
   .row {
     flex-direction: row; /* Vízszintes elrendezés */
     text-align: justify;
   }
 
-  .masodik{
+  .masodik {
     width: 100%;
   }
 }
 
-.senderbutton{
+.senderbutton {
   align-items: center;
   background: #FFFFFF;
   border: 0 solid #E2E8F0;
@@ -94,45 +86,86 @@
 }
 
 @media (max-width: 452px) {
-  .overlay-text{
+  .overlay-text {
     margin-top: 100px;
   }
-  .custom-bg{
+  .custom-bg {
     margin-top: 90px;
   }
 }
 
-
-// .custom-bg {
-
-//   position: relative;
-//   width: 100vw; /* A kívánt szélesség */ //changed 07.08
-//   height: 700vh; /* A kívánt magasság, pl. 50% a viewport magasságából */
-//   overflow: hidden; /* Elrejti a felesleges részeket */
-// }
-
 .tacbox {
-  display:block;
+  display: block;
   padding: 0em;
   margin: 0em;
   max-width: 800px;
 }
 
-// input {
-//   height: 2em;
-//   width: 2em;
-//   vertical-align: middle;
-// }
-
-.profil{
-  width: 50%;
-  border-radius: 30%;
-  justify-content: center;
-  text-align: center;
-  display: flex;
+.profil {
+  width: 100%; /* width beállítása 100%-ra */
+  max-width: 20rem;
+  border-radius: 20%; /* Ha mégis szükséges */
+  margin: 0 auto; /* középre igazítás */
+  display: block;
+  top: 3rem;
+  position: relative;
 }
 
-.teszthatter{
-  width: 50%;
-  transform: scaleX(0.9);
+/* 768px és felette */
+@media (min-width: 768px) {
+  .profil {
+    width: 110%; /* width beállítása 100%-ra */
+    max-width: 20rem;
+    border-radius: 20%; /* Ha mégis szükséges */
+    margin: 0 auto; /* középre igazítás */
+    display: block;
+    top: 5rem;
+    position: relative;
+  }
+}
+
+/* 767px és alatta */
+@media (max-width: 767px) {
+  .profil {
+    width: 100%; /* width beállítása 100%-ra */
+    max-width: 20rem;
+    border-radius: 20%; /* Ha mégis szükséges */
+    margin: 0 auto; /* középre igazítás */
+    display: block;
+    top: 3rem;
+    position: relative;
+  }
+}
+
+/* 900px és alatta */
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column; /* Függőleges elrendezés */
+  }
+
+  .kapcsolatszoveg{
+    padding: 10px;
+
+  }
+
+  .col-md-6 {
+    width: 100%; /* teljes szélesség */
+    padding: 10px;
+  }
+
+  .col-md-6.profil {
+    order: 2; /* Második elem */
+    width: 100%; /* teljes szélesség */
+    padding: 0;
+  }
+
+  .profil {
+    position: relative;
+    top: auto;
+    bottom: 0; /* Kép az aljára kerül */
+  }
+
+  .row .col-md-8 {
+    width: 100%; /* teljes szélesség */
+  }
 }
