@@ -1,3 +1,4 @@
+Norbert Rozs
 <app-background class="custom-bg">
   <div class="overlay-text custom-bg">
     <p>Kapcsolat</p>
@@ -8,7 +9,7 @@
     <div class="row">
       <!-- Bal oldali oszlop -->
       <div class="col-md-6">
-        <div id="emailForm">
+        <form id="emailForm" (submit)="onSubmit()" [formGroup]="formGroup">
           <br>
           <div class="kapcsolatszoveg">
             <p>
@@ -21,35 +22,39 @@
           <div class="row mb-3">
             <div class="col-md-8">
               <label for="name" class="form-label"></label>
-              <input (change)="changer($event, 'name')" type="text" class="form-control" id="name" name="name" placeholder="Teljes név" required>
+              <input formControlName="name" type="text" class="form-control" id="name" name="name" placeholder="Teljes név" required>
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-md-8">
               <label for="email" class="form-label"></label>
-              <input (change)="changer($event, 'email')" type="email" class="form-control" id="email" name="email" placeholder="E-mail cím" required>
+              <input formControlName="email" type="email" class="form-control" id="email" name="email" placeholder="E-mail cím" required>
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-md-8">
               <label for="phone" class="form-label"></label>
-              <input (change)="changer($event, 'phone')" type="tel" class="form-control" id="phone" name="phone" placeholder="Telefonszám" required>
+              <input formControlName="phone" type="tel" class="form-control" id="phone" name="phone" placeholder="Telefonszám" required>
             </div>
           </div>
           <div class="row">
             <div class="col-md-8">
               <label for="message" class="form-label"></label>
-              <textarea (change)="changer($event, 'text')" class="form-control" id="message" name="message" placeholder="Üzenet" rows="3" required></textarea>
+              <textarea formControlName="text" class="form-control" id="message" name="message" placeholder="Üzenet" rows="3" required></textarea>
             </div>
           </div>
           <br>
           <div class="tacbox">
-            <input id="checkbox" type="checkbox" />
+            <input id="checkbox" type="checkbox" required formControlName="terms"/>
+            <!-- <div *ngIf="formGroup.get('terms') && formGroup.get('terms').touched && formGroup.get('terms').invalid">
+              <small *ngIf="formGroup.get('terms').errors.required">This is required.</small>
+            </div> -->
             <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
           </div>
           <br>
-          <button type="submit" class="senderbutton" (click)="sender()">Küldés</button>
-        </div>
+
+          <button type="submit" class="senderbutton" >Küldés</button>
+        </form>
       </div>
 
       <!-- Jobb oldali oszlop -->

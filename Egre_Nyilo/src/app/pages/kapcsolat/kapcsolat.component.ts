@@ -1,30 +1,34 @@
 import { Component } from '@angular/core';
 import { BackgroundComponent } from '../background/background.component';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-kapcsolat',
   standalone: true,
-  imports: [BackgroundComponent],
+  imports: [BackgroundComponent, FormsModule, ReactiveFormsModule, CommonModule],
   templateUrl: './kapcsolat.component.html',
   styleUrl: './kapcsolat.component.scss'
 })
 export class KapcsolatComponent {
-document: any;
-checked: any;
-  sender() {
-    const data = {
-      name: 'bármi',
-      email: 'test@gmail.com',
-      phone: '1341516145',
-      text: 'szövegszöveg'
-    }
+  document: any;
+  checked: any;
+  //formgroup cucc
+  formGroup: FormGroup = this.formbuilder.group({ name: ['', Validators.required], email: ['', Validators.required],
+    phone: ['', Validators.required], text: ['', Validators.required], terms: [false, Validators.required] });
+
+  constructor(public formbuilder: FormBuilder) {}
+
+  onSubmit() {
+
+    if(!this.formGroup.valid) return;
     fetch("https://brass-loud-whip.glitch.me/email", {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(this.data),
+      body: JSON.stringify(this.formGroup.value),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -36,6 +40,7 @@ checked: any;
         alert("A funkció jelenleg nem elérhető!");
       });
   }
+
 
 
 
@@ -65,10 +70,10 @@ checked: any;
   //     });
   // }
 
-  data:any = {
+  data: any = {
   }
 
-  changer(data:any, name: string){
+  changer(data: any, name: string) {
     this.data[name] = data.target.value
   }
 }
