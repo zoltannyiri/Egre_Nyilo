@@ -4,7 +4,7 @@
       <div class="et-hero-tabs-upper navbar nav">
         <a [routerLink]="['/kezdolap']" routerLinkActive="router-link-active" class="">
           <div class="logo-cointainer justify-content-center">
-           <img src="assets/teszthatter.png" alt="Logó" class="logo-img justify-content-center" id="szoveglogo">
+           <img src="assets/navbarlogo.png" alt="Logó" class="logo-img justify-content-center" id="szoveglogo">
            <!-- <span class="logo-text">Égre Nyíló Mentálhigiénés Műhely</span> -->
           </div>
         </a>
@@ -14,7 +14,6 @@
         <a class="et-hero-tab rounded" [routerLink]="['/kapcsolat']">KAPCSOLAT</a>
         <a class="et-hero-tab rounded" [routerLink]="['/arak']">ÁRAK, INFORMÁCIÓK</a>
         <!-- <a class="et-hero-tab rounded" [routerLink]="['/miert-online']">MIÉRT ONLINE?</a> -->
-
         <span class="et-hero-tab-slider"></span>
       </div>
     </div>
@@ -24,7 +23,7 @@
   <div *ngIf="isMobileView" class="navbar navbar-expand-lg navbar-light" id="mobilhatter">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <a class="navbar-brand" [routerLink]="['/kezdolap']">
-        <img src="assets/teszthatter.png" alt="Logó" class="logo-img" width="50" height="50">
+        <img src="assets/navbarlogo.png" alt="Logó" class="logo-img" width="50" height="50">
       </a>
       <button class="navbar-toggler" type="button" (click)="toggleMenu()" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,7 +49,6 @@
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/arak']" routerLinkActive="active">Árak, információk</a>
         </li>
-
       </ul>
     </div>
   </div>

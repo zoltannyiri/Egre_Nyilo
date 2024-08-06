@@ -20,5 +20,5 @@ import { ArakComponent } from './pages/arak/arak.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Egre_Nyilo';
+  title = 'Égre Nyíló';
 }

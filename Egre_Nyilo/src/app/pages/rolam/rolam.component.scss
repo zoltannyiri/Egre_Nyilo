@@ -79,6 +79,14 @@
   }
 }
 
+@media (max-width: 800px) {
+  .rolam-text, .overlay-text{
+    width: 92%;
+    // max-width: 100%;
+    padding: 2px;
+  }
+}
+
 
 .hatterszin{
 
@@ -167,7 +175,7 @@ ul.custom-list li::before {
 }
 
 /* Responsive columns */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 690px) {
   .column {
     width: 100%;
     display: block;
@@ -191,7 +199,7 @@ ul.custom-list li::before {
 }
 
 
-@media (max-width: 452px) {
+@media (max-width: 564px) {
   .overlay-text{
     margin-top: 155px;
   }

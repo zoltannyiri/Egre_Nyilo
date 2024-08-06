@@ -181,7 +181,7 @@
   text-align: center;
 }
 
-@media (max-width: 452px) {
+@media (max-width: 564px) {
   .overlay-text{
     margin-top: 60px;
   }
@@ -189,6 +189,15 @@
     margin-top: 90px;
   }
 }
+
+@media (max-width: 800px) {
+  .kezdolap-text, .overlay-text{
+    width: 92%;
+    // max-width: 100%;
+    padding: 2px;
+  }
+}
+
 
 /* CSS */
 .button-35 {

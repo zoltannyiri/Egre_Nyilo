@@ -121,7 +121,7 @@ a {
 @media (max-width: 452) {
   .navbar{
 
-    background-image: linear-gradient(#bbecff, #4dcdff );
+    background-image: linear-gradient(#afe9ff, #4dcdff );
   }
 }
 
@@ -156,9 +156,20 @@ a {
 }
 
 .logo-img {
-  width: 350px;
+  width: 470px;
   height: 100px;
 }
+
+
+// háttér teszt:
+// @media (max-width: 445px) {
+//   .navbar-brand {
+//     background-image: url("/assets/logo_transparent");
+//   }
+//   .navbar {
+//     background-image: url('/assets/logo_transparent');
+//   }
+// }
 
 .logo-text {
   font-size: 24px; /* Igazítsd a szöveg méretét a logó méretéhez */
@@ -170,11 +181,22 @@ a {
 //   // background-color: #fdeeee;
 // }
 
-.navbar-nav {
-  // background-color: #fdeeee;
-  // background: #fdeeee;
-  background-image: linear-gradient(#bbecff, #4dcdff );
+@media (min-width: 565px) {
+  .navbar-nav {
+    // background-color: #fdeeee;
+    // background: #fdeeee;
+    background-image: linear-gradient(#84dcff, #4dcdff );
+  }
 }
+
+@media (max-width: 564px) {
+  .navbar-nav {
+    // background-color: #fdeeee;
+    // background: #fdeeee;
+    background-image: linear-gradient(#96e1ff, #b5e1ec, #4dcdff );
+  }
+}
+
 
 
 

@@ -34,6 +34,14 @@
   font-size: 22px;
 }
 
+@media (max-width: 800px) {
+  .szolg-text, .overlay-text{
+    width: 85%;
+    // max-width: 100%;
+    padding: 2px;
+  }
+}
+
 .elso {
   font-size: 22px;
   color: rgb(0, 0, 0);
@@ -123,7 +131,7 @@
   text-align: center;
 }
 
-@media (max-width: 452px) {
+@media (max-width: 564px) {
   .overlay-text{
     margin-top: 60px;
   }
