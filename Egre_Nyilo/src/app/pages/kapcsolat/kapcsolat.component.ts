@@ -12,15 +12,24 @@ import { CommonModule } from '@angular/common';
   styleUrl: './kapcsolat.component.scss'
 })
 export class KapcsolatComponent {
+  isLoading = false;
   document: any;
   checked: any;
   //formgroup cucc
-  formGroup: FormGroup = this.formbuilder.group({ name: ['', Validators.required], email: ['', Validators.required],
-    phone: ['', Validators.required], text: ['', Validators.required], terms: [false, Validators.required] });
+  formGroup: FormGroup = this.formbuilder.group({
+    name: ['', Validators.required],
+    email: ['', Validators.required],
+    phone: ['', Validators.required],
+    text: ['', Validators.required],
+    terms: [false, Validators.required]
+  });
 
   constructor(public formbuilder: FormBuilder) {}
 
   onSubmit() {
+    if (!this.formGroup.valid) return;
+    this.isLoading = true;
+    console.log('Loading state before fetch:', this.isLoading);
 
     if(!this.formGroup.valid) return;
     fetch("https://brass-loud-whip.glitch.me/email", {
@@ -32,10 +41,12 @@ export class KapcsolatComponent {
     })
       .then((response) => response.json())
       .then((data) => {
+        this.isLoading = false;
         alert("Sikeres e-mail küldés!");
 
       })
       .catch((error) => {
+        this.isLoading = false;
         console.error("Error:", error);
         alert("A funkció jelenleg nem elérhető!");
       });

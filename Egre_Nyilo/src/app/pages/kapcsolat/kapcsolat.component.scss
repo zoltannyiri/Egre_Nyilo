@@ -188,3 +188,19 @@
 .tacbox a {
   margin: 0 2px; /* A linkek közötti távolság */
 }
+
+.spinner-border {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.2em;
+  border-style: solid;
+  border-color: currentColor transparent transparent transparent;
+  border-radius: 50%;
+  animation: spinner-border 0.75s linear infinite;
+}
+
+@keyframes spinner-border {
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,4 +1,3 @@
-Norbert Rozs
 <app-background class="custom-bg">
   <div class="overlay-text custom-bg">
     <p>Kapcsolat</p>
@@ -57,7 +56,16 @@ Norbert Rozs
           </div>
           <br>
 
-          <button type="submit" class="senderbutton" >Küldés</button>
+          <button type="submit" class="senderbutton" [disabled]="isLoading">
+            <ng-container *ngIf="!isLoading; else loading">
+              Küldés
+            </ng-container>
+            <ng-template #loading>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Küldés folyamatban...
+            </ng-template>
+          </button>
+
         </form>
       </div>
 
