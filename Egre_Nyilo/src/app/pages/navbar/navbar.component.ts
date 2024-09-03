@@ -23,7 +23,7 @@ export class NavbarComponent {
   }
 
   checkIsMobile(): boolean {
-    return typeof window !== 'undefined' && window.innerWidth < 768;
+    return typeof window !== 'undefined' && window.innerWidth < 992;
   }
 
   @HostListener('window:resize', ['$event'])

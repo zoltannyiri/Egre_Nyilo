@@ -96,18 +96,21 @@
 
 
 .overlay-text {
-  font-family: 'Garamond';
-  font-size: 3em; /* Például: 5em a szöveg méretéhez */
-  // top: 30%;
-  // bottom: 40%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  // color: rgb(114, 113, 216);
-  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
+  font-family: 'Garamond';
+  font-size: 3em;
+  color: rgb(255, 255, 255);
   padding: 10px;
   box-sizing: border-box;
   width: 100%;
+}
+
+.overlay-text p {
+  flex: 1;
+  margin: 0 10px; /* Szövegek távolsága a képtől */
 }
 
 #kezdolap-logo {
@@ -232,7 +235,16 @@
   box-shadow: #1affc6 0 0 0 1px, transparent 0 0 0 0;
 }
 
-
+#kezdolap-profil {
+  flex: 1;
+  max-width: 18rem;
+  height: 18rem;
+  border-radius: 50%; /* Ha mégis szükséges */
+  margin: 0 auto; /* A kép körül lévő margó */
+  display: block;
+  object-fit: cover;
+  object-position: center 30%;
+}
 
 /* Reszponzív beállítások */
 // @media (min-width: 1181px) {
