@@ -50,16 +50,17 @@
             </div>
           </div>
           <br>
-          <div class="tacbox col-md-8">
+          <div class="tacbox">
             <input id="checkbox" type="checkbox" required formControlName="terms"/>
             <!-- <div *ngIf="formGroup.get('terms') && formGroup.get('terms').touched && formGroup.get('terms').invalid">
               <small *ngIf="formGroup.get('terms').errors.required">This is required.</small>
             </div> -->
             <label for="checkbox">Elfogadom az <a href="/assets/altalanos-megbizasi-feltetelek.pdf" target="_blank">Általános Megbízási Feltételeket</a><br> és az
               <a href="/assets/adatkezelesi-nyilatkozat.pdf" target="_blank">Adatkezelési Nyilatkozatot</a>.</label>
-              <div *ngIf="formGroup.get('terms')?.touched && formGroup.get('terms')?.invalid">
-                <small style="color: red;">A folytatáshoz el kell fogadnia a feltételeket.</small>
-              </div>
+          </div>
+          <br>
+          <div *ngIf="formGroup.get('terms')?.touched && formGroup.get('terms')?.invalid">
+            <small style="color: red;" class="feltetel_error"><b>A folytatáshoz el kell fogadnia a feltételeket.</b></small>
           </div>
           <br>
 

@@ -27,11 +27,12 @@ export class KapcsolatComponent {
   constructor(public formbuilder: FormBuilder) {}
 
   onSubmit() {
+    this.formGroup.markAllAsTouched();
     if (!this.formGroup.valid) return;
     this.isLoading = true;
     console.log('Loading state before fetch:', this.isLoading);
 
-    if(!this.formGroup.valid) return;
+    // if(!this.formGroup.valid) return;
     fetch("https://brass-loud-whip.glitch.me/email", {
       method: "POST", // or 'PUT'
       headers: {
