@@ -15,10 +15,6 @@
 .overlay-text {
   font-family: 'Garamond';
   font-size: 3em; /* Például: 5em a szöveg méretéhez */
-  // top: 30%;
-  // bottom: 40%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
   text-align: center;
   padding: 10px;
@@ -207,36 +203,3 @@ ul.custom-list li::before {
     margin-top: 130px;
   }
 }
-
-
-// @media (max-width: 1180px) {
-//   .overlay-text {
-//     font-size: 50px; /* Kisebb betűméret a közepes képernyőknél */
-//     width: 90%; /* Szélesség állítása közepes képernyőn */
-//     bottom: 400px;
-//   }
-// }
-
-// @media (max-width: 600px) {
-//   .overlay-text {
-//     top: auto;
-//     bottom: 400px; /* Alulra igazítás */
-//     left: 50%;
-//     transform: translateX(-50%);
-//     width: 90%; /* Szélesség állítása kisebb képernyőn */
-//     padding: 5px;
-//     font-size: 48px; /* Kisebb betűméret a kisebb képernyőkön */
-//   }
-// }
-
-// @media (max-width: 462px) {
-//   .overlay-text {
-//     top: auto;
-//     bottom: 340px; /* Alulra igazítás */
-//     left: 50%;
-//     transform: translateX(-50%);
-//     width: 90%; /* Szélesség állítása kisebb képernyőn */
-//     padding: 5px;
-//     font-size: 40px; /* Kisebb betűméret a kisebb képernyőkön */
-//   }
-// }

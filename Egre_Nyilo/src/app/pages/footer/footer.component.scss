@@ -72,13 +72,6 @@ $gray-light-color: #92999f;
   .footer-right {
     width: 20%;
 
-    // .infok {
-    //   font-size: 22px;
-    //   color: white;
-    //   margin: 0;
-    //   padding: 0;
-    // }
-
     a {
       color: $white-color;
       text-decoration: none;
@@ -142,15 +135,6 @@ $gray-light-color: #92999f;
   }
 }
 
-// .footer-right{
-//   position: absolute;
-//   right: 15%;
-// }
-
-// .footer-left{
-//   position: relative;
-//   left: 15%;
-// }
 
 @media (min-width: 881px) {
   .footer-right{

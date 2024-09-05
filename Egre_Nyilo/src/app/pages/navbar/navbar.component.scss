@@ -95,8 +95,6 @@ a {
   left: -100%; /* Elrejtjük alapértelmezetten */
   width: 200px; /* Változtathatod a menü szélességét */
   transition: left 0.3s ease; /* Animáció hozzáadása */
-  // background-color: #f8f9fa; /* Háttérszín */
-  // border: 1px solid #dee2e6; /* Keret */
   padding: 10px; /* Belső tér */
 }
 
@@ -170,25 +168,12 @@ a {
 }
 
 
-// háttér teszt:
-// @media (max-width: 445px) {
-//   .navbar-brand {
-//     background-image: url("/assets/logo_transparent");
-//   }
-//   .navbar {
-//     background-image: url('/assets/logo_transparent');
-//   }
-// }
-
 .logo-text {
   font-size: 24px; /* Igazítsd a szöveg méretét a logó méretéhez */
   font-weight: bold; /* Igazítsd a szöveg stílusát */
   margin-left: 10px; /* Távolság a logótól */
 }
 
-// #mobilhatter {
-//   // background-color: #fdeeee;
-// }
 
 @media (min-width: 565px) {
   .navbar-nav {
@@ -200,8 +185,6 @@ a {
 
 @media (max-width: 564px) {
   .navbar-nav {
-    // background-color: #fdeeee;
-    // background: #fdeeee;
     background-image: linear-gradient(#96e1ff, #b5e1ec, #4dcdff );
   }
 }
