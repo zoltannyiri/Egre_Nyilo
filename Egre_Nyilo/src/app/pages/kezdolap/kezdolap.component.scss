@@ -246,6 +246,14 @@
   object-position: center 30%;
 }
 
+@media screen and (max-width: 690px) {
+  .overlay-text {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
 /* Reszponzív beállítások */
 // @media (min-width: 1181px) {
 //   .overlay-text {
