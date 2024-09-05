@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700');
 
 $primary-color: #333;
-$secondary-color: #929292;
+$secondary-color: #24B5AB;
 $link-color: rgb(22, 105, 64);
 $white-color: #fff;
 $gray-color: #222;
@@ -37,7 +37,7 @@ $gray-light-color: #92999f;
     margin: 0;
 
     span {
-      color: $link-color;
+      color: #6aebe2;
     }
   }
 
@@ -84,6 +84,10 @@ $gray-light-color: #92999f;
       text-decoration: none;
     }
 
+    i {
+      color: white;
+    }
+
     p {
       margin: 0;
       padding: 0;
@@ -121,6 +125,10 @@ $gray-light-color: #92999f;
       justify-content: center;
     }
 
+    .fa, .fa-phone, .footer-right{
+      color: white;
+    }
+
     .logo-container{
       justify-content: center;
       align-items: center;
@@ -148,6 +156,7 @@ $gray-light-color: #92999f;
   .footer-right{
   position: absolute;
   right: 17%;
+  color: white;
   }
 
   .footer-left{
@@ -165,4 +174,12 @@ $gray-light-color: #92999f;
   color: white;
   margin: 0;
   padding: 0;
+}
+
+#kapcsolatszin{
+  color: white;
+}
+
+.fa{
+  color: white;
 }

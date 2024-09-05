@@ -31,5 +31,8 @@ export class NavbarComponent {
     this.isMobileView = this.checkIsMobile();
   }
 
+  closeMenu() {
+    this.menuOpen = false;
+  }
 
 }

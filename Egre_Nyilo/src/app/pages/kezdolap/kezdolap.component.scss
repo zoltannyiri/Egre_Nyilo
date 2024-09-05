@@ -237,8 +237,8 @@
 
 #kezdolap-profil {
   flex: 1;
-  max-width: 18rem;
-  height: 18rem;
+  max-width: 20rem;
+  height: 20rem;
   border-radius: 50%; /* Ha mégis szükséges */
   margin: 0 auto; /* A kép körül lévő margó */
   display: block;
@@ -252,6 +252,22 @@
     display: block;
     margin-bottom: 20px;
   }
+}
+
+.nev{
+  font-size: 1.3rem;
+  justify-content: end;
+  position: relative;
+}
+
+.nev {
+  text-align: center; /* Szöveg középre igazítása */
+}
+
+.nev-text {
+  margin-top: 10px; /* Távolság a képtől */
+  font-size: 1.2rem; /* Igény szerint módosítható */
+  color: #ffffff; /* Szöveg színe, opcionális */
 }
 
 /* Reszponzív beállítások */

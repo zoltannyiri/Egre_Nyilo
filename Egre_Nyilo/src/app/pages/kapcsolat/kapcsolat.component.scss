@@ -87,9 +87,13 @@
 
 .kapcsolatszoveg {
   font-family: 'Garamond';
-  font-size: 22px;
+  font-size: 25px;
   color: #000000;
   text-align: justify;
+  text-align: center;
+  // justify-content: center;
+  left: 20%;
+  right: 20;
 }
 
 @media (max-width: 562px) {
@@ -117,6 +121,7 @@
   display: block;
   top: 3rem;
   position: relative;
+  object-fit: cover;
 }
 
 /* 768px és felette */
@@ -211,3 +216,51 @@
     transform: rotate(360deg);
   }
 }
+
+.jobb-oldal{
+  text-align: center;
+}
+
+.nev {
+  margin-top: 5rem; /* A név és a kép közötti távolság */
+  font-size: 1.5rem; /* Betűméret */
+  color: #333; /* Szöveg színe */
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Garamond';
+}
+
+@media (max-width: 900) {
+  .nev{
+    margin-top: 1rem;
+  }
+}
+
+// @media (min-width: 1410) {
+//   .nev{
+//     margin-top: 45%;
+//   }
+// }
+
+// @media (max-width: 1409) {
+//   .nev{
+//     margin-top: 40%;
+//   }
+// }
+
+// @media (max-width: 1159) {
+//   .nev{
+
+//     position: absolute;
+//     margin-top: 20rem;
+//   }
+// }
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
