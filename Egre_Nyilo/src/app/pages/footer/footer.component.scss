@@ -2,7 +2,7 @@
 
 $primary-color: #333;
 $secondary-color: #929292;
-$link-color: lightseagreen;
+$link-color: rgb(22, 105, 64);
 $white-color: #fff;
 $gray-color: #222;
 $gray-light-color: #92999f;
@@ -118,6 +118,7 @@ $gray-light-color: #92999f;
       width: 100%;
       margin-bottom: 40px;
       text-align: center;
+      justify-content: center;
     }
 
     .logo-container{
@@ -130,6 +131,28 @@ $gray-light-color: #92999f;
     .footer-center i {
       margin-left: 0;
     }
+  }
+}
+
+// .footer-right{
+//   position: absolute;
+//   right: 15%;
+// }
+
+// .footer-left{
+//   position: relative;
+//   left: 15%;
+// }
+
+@media (min-width: 881px) {
+  .footer-right{
+  position: absolute;
+  right: 17%;
+  }
+
+  .footer-left{
+  position: relative;
+  left: 20%;
   }
 }
 
