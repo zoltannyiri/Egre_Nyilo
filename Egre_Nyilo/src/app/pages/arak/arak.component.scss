@@ -30,7 +30,7 @@
   width: 80%;
   max-width: 65rem;
   margin: 0 auto;
-  text-align: justify;
+  // text-align: justify;
   font-size: 22px;
   color: black;
 }
@@ -115,7 +115,7 @@
 
 @media (max-width: 564px) {
   .overlay-text{
-    margin-top: 155px;
+    margin-top: 80px !important;
   }
   .custom-bg{
     margin-top: 100px;
