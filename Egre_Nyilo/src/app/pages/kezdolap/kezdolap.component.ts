@@ -15,7 +15,7 @@ export class KezdolapComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle('Égre Nyíló Mentálhigiénés Műhely');
-    this.meta.addTag({ name: 'description', content: 'Ez az oldal leírása, amely tartalmazza a fő kulcsszót.' });
+    // this.meta.addTag({ name: 'description', content: 'Ez az oldal leírása, amely tartalmazza a fő kulcsszót.' });
     this.meta.addTag({ name: 'keywords', content: 'Keresztény pszichológus, Pszichológus, Tapolca, Szülés, szülési trauma, szülésélmény, Túlsúly, fogyás, Függőség, Pornófüggőség, Egyedülálló, szülő, Önismeret, Depresszió, Szorongás, Válás, Halál, gyász, veszteség'});
   }
 }
