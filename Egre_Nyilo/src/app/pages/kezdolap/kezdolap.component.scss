@@ -61,6 +61,7 @@
   font-size: 22px;
   font-family: 'Garamond';
   color: black;
+  text-align: left !important;
   // text-align: justify;
 }
 
@@ -70,12 +71,13 @@
 
 #type1-1{
   color: black;
-  text-align: justify;
+  // text-align: justify;
+  text-align: center;
 }
 
 #type1-2{
   font-size: 22px;
-  text-align: justify;
+  // text-align: justify;
 }
 
 .madar{
@@ -90,12 +92,12 @@
 #question{
   font-size: 28px;
   color: black;
-
+  text-align: center;
 }
 
 #vikar{
   color: black;
-  text-align: center;
+  text-align: center !important;
 }
 
 @media (max-width: 564px) {
@@ -118,7 +120,7 @@
 
 /* CSS */
 .button-35 {
-  align-items: center;
+  align-items: center !important;
   background-color: #93d9ff;
   border-radius: 12px;
   box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
@@ -135,7 +137,7 @@
   margin: 0;
   outline: none;
   padding: 1rem 1.2rem;
-  text-align: center;
+  text-align: center !important;
   text-decoration: none;
   transition: box-shadow .2s,-webkit-box-shadow .2s;
   white-space: nowrap;
@@ -143,6 +145,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  position: relative;
 }
 
 .button-35:hover {

@@ -35,13 +35,13 @@
   color: black;
 }
 
-.lista{
-  text-align: justify;
-}
+// .lista{
+//   // text-align: justify;
+// }
 
-.berlet{
-  text-align: justify;
-}
+// .berlet{
+//   text-align: justify;
+// }
 
 .egyeni-cim{
   font-size: 2rem;
@@ -92,6 +92,15 @@
   }
 }
 
+
+@media (max-width: 900px) {
+  .row, .column {
+    flex-direction: column; /* Függőleges elrendezés */
+    max-width: 100%;
+    width: 100% !important;
+  }
+
+}
 
 
 
