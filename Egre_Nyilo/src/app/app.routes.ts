@@ -9,13 +9,13 @@ import { ArakComponent } from './pages/arak/arak.component';
 export const routes: Routes = [
 
   // {'path': '', redirectTo: '/kezdolap', pathMatch: 'full'},
-  {'path': 'kezdolap', component: KezdolapComponent },
+  {'path': '', component: KezdolapComponent },
   {'path': 'rolam', component: RolamComponent},
   {'path': 'kapcsolat', component: KapcsolatComponent},
   {'path': 'szolgaltatasok', component: SzolgaltatasokComponent },
   // {'path': 'miert-online', component: MiertOnlineComponent },
   {'path': 'arak', component: ArakComponent },
-  {'path': '**', redirectTo: '/kezdolap', pathMatch: 'full'}
+  {'path': '**', redirectTo: '', pathMatch: 'full'}
 ];
 
 
