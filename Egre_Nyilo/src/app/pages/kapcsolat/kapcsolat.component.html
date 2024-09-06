@@ -16,15 +16,10 @@
       <!-- Bal oldali oszlop -->
       <div class="col-md-6">
         <form id="emailForm" (submit)="onSubmit()" [formGroup]="formGroup">
+          
           <br>
-          <!-- <div class="kapcsolatszoveg">
-            <p>
-              Legegyszerűbb mód a kapcsolatfelvételre, ha felhívsz telefonon:<br>06 70 375 0208.<br>
-              Ha nem tudom felvenni, amint tudlak, vissza foglak hívni.<br>
-              Vagy töltsd ki ezt az űrlapot, és leveledre egy napon belül válaszolni fogok.
-            </p>
-          </div> -->
           <br>
+
           <div class="row mb-3">
             <div class="col-md-8">
               <label for="name" class="form-label"></label>
@@ -52,9 +47,6 @@
           <br>
           <div class="tacbox">
             <input id="checkbox" type="checkbox" required formControlName="terms"/>
-            <!-- <div *ngIf="formGroup.get('terms') && formGroup.get('terms').touched && formGroup.get('terms').invalid">
-              <small *ngIf="formGroup.get('terms').errors.required">This is required.</small>
-            </div> -->
             <label for="checkbox">Elfogadom az <a href="/assets/altalanos-megbizasi-feltetelek.pdf" target="_blank">Általános Megbízási Feltételeket</a><br> és az
               <a href="/assets/adatkezelesi-nyilatkozat.pdf" target="_blank">Adatkezelési Nyilatkozatot</a>.</label>
           </div>
@@ -77,16 +69,11 @@
       </div>
       <br>
 
-      <!-- Jobb oldali oszlop -->
       <div class="col-md-6">
-        <!-- Itt bármit elhelyezhetsz -->
         <div class="jobb-oldal text-center">
           <img src="/assets/profil1.jpg" alt="profil" class="profil">
           <p class="nev">B. Kiss Eszter<br> mentálhigiénés szakember</p>
         </div>
-
-
-
       </div>
     </div>
   </div>

@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BackgroundComponent } from '../background/background.component';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Meta } from '@angular/platform-browser';
 
 
 @Component({
@@ -11,7 +12,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './kapcsolat.component.html',
   styleUrl: './kapcsolat.component.scss'
 })
-export class KapcsolatComponent {
+export class KapcsolatComponent implements OnInit{
   isLoading = false;
   document: any;
   checked: any;
@@ -24,7 +25,7 @@ export class KapcsolatComponent {
     terms: [false, Validators.required]
   });
 
-  constructor(public formbuilder: FormBuilder) {}
+  constructor(public formbuilder: FormBuilder, private meta: Meta) {}
 
   onSubmit() {
     this.formGroup.markAllAsTouched();
@@ -53,34 +54,10 @@ export class KapcsolatComponent {
       });
   }
 
-
-
-
-
-
-
-
-  // sender2() {
-  //   const data = {
-  //     text: 'szövegszöveg'
-  //   }
-  //   fetch("https://brass-loud-whip.glitch.me/email", {
-  //     method: "POST", // or 'PUT'
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify(this.data),
-  //   })
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       alert("Sikeres e-mail küldés!");
-
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error:", error);
-  //       alert("A funkció jelenleg nem elérhető!");
-  //     });
-  // }
+  ngOnInit(): void {
+    this.meta.addTag({ name: 'description', content: 'Vedd fel velem a kapcsolatot! Mentálhigiénés segítő, keresztény pszichológus, online, Tapolca.' });
+    this.meta.addTag({ name: 'keywords', content: 'mentálhigiénés, segítő, keresztény, pszichológus, kereszténypszichológus, online, Tapolca.' });
+  }
 
   data: any = {
   }

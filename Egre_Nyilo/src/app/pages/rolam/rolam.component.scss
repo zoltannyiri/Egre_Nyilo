@@ -30,7 +30,6 @@
   max-width: 65rem;
   color: black;
   margin: 0 auto;
-  // text-align: justify;
   font-size: 22px;
 }
 
@@ -59,7 +58,6 @@
   padding: 10px 0; /* További stílusok az oszlophoz */
 }
 
-/* Ha a szélesség 690px felett van, két oszlopos elrendezés */
 @media (min-width: 690px) {
   .row {
     flex-direction: row; /* Vízszintes elrendezés */
@@ -160,17 +158,14 @@ ul.custom-list li::before {
   padding: 0 10px;
 }
 
-/* Remove extra left and right margins, due to padding */
 .row {margin: 0 -5px;}
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive columns */
 @media screen and (max-width: 690px) {
   .column {
     width: 100%;
@@ -179,18 +174,15 @@ ul.custom-list li::before {
   }
 }
 
-
 * {
   box-sizing: border-box;
 }
 
-/* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
   color: black;
-  // background-color: #f1f1f1;
   background-color: transparent;
 }
 

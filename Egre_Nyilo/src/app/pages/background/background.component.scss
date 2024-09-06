@@ -2,13 +2,11 @@
   background-image: url("/assets/hatter.png");
   position: relative;
   width: 100vw; /* A kívánt szélesség */
-  // height: 500px; /* Adj meg egy magasságot, ha szükséges */
   display: flex;
   justify-content: center;
   align-items: center; /* Igazítás középre */
   background-repeat: no-repeat;
   background-size: cover; /* Biztosítja, hogy a kép kitöltse a konténert, anélkül hogy összenyomódna */
-  // background-position: center 10%; /* Beállíthatod a kívánt kezdőpozíciót */
   overflow: hidden; /* Elrejti a felesleges részeket */
   background-attachment: fixed;
 }

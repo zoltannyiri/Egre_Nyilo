@@ -12,10 +12,9 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class KezdolapComponent implements OnInit {
   constructor(private meta: Meta, private titleService: Title) { }
-
   ngOnInit(): void {
     this.titleService.setTitle('Égre Nyíló Mentálhigiénés Műhely');
-    // this.meta.addTag({ name: 'description', content: 'Ez az oldal leírása, amely tartalmazza a fő kulcsszót.' });
+    this.meta.addTag({ name: 'description', content: 'A mentálhigiénés szakember segít megküzdeni nehéz élethelyzeteddel, lelki problémáiddal, félelmeiddel. Ráláthatsz elakadásaidra, és kísér önismereti utadon. Ha segítségre van szükséged, kért pszichológus, vagy mentálhigiénés szakember segítségét!' });
     this.meta.addTag({ name: 'keywords', content: 'Keresztény pszichológus, Pszichológus, Tapolca, Szülés, szülési trauma, szülésélmény, Túlsúly, fogyás, Függőség, Pornófüggőség, Egyedülálló, szülő, Önismeret, Depresszió, Szorongás, Válás, Halál, gyász, veszteség'});
   }
 }

@@ -1,6 +1,7 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { BackgroundComponent } from '../background/background.component';
 import { ActivatedRoute } from '@angular/router';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-szolgaltatasok',
@@ -11,8 +12,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 
 
-export class SzolgaltatasokComponent implements AfterViewInit{
-  constructor(private route: ActivatedRoute) { }
+export class SzolgaltatasokComponent implements AfterViewInit, OnInit{
+  constructor(private route: ActivatedRoute, private meta: Meta) { }
 
   ngAfterViewInit() {
     this.route.fragment.subscribe(fragment => {
@@ -34,6 +35,10 @@ export class SzolgaltatasokComponent implements AfterViewInit{
         });
       }
     }
+  }
+  ngOnInit(): void {
+    this.meta.addTag({ name: 'description', content: 'Önismeret, gyász, válás, veszteségek, túlsúly, szülési traumák, konfliktuskezelés, egyedülálló szülők, függőségek, krízisek, kapcsolati nehézségek.' });
+    this.meta.addTag({ name: 'keywords', content: 'Önismeret, gyász, válás, veszteségek, túlsúly, szülési traumák, konfliktuskezelés, egyedülálló szülők, függőségek, krízisek, kapcsolati nehézségek.' });
   }
 
 }

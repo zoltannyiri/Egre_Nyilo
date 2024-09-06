@@ -41,7 +41,6 @@
   padding: 10px 0; /* További stílusok az oszlophoz */
 }
 
-/* Ha a szélesség 900px felett van, két oszlopos elrendezés */
 @media (min-width: 900px) {
   .row {
     flex-direction: row; /* Vízszintes elrendezés */
@@ -85,7 +84,6 @@
     text-align: center !important;
     align-items: center !important;
     display: inline-flex;
-    // position: relative;
     justify-content: center !important;
   }
 }
@@ -94,9 +92,7 @@
   font-family: 'Garamond';
   font-size: 25px;
   color: #000000;
-  // text-align: justify;
   text-align: center;
-  // justify-content: center;
   left: 20%;
   right: 20;
 }
