@@ -10,6 +10,9 @@
 
 @import "../node_modules/bulma/bulma";
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+
+
 
 // @import '~bootstrap-icons/font/bootstrap-icons.css';
 
@@ -24,19 +27,19 @@
 }
 
 body {
-  font-family: 'Garamond';
+  font-family: 'Garamond', 'EB Garamond';
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
   /* Android-specifikus stílusok itt */
   body {
-    font-family: 'Garamond', serif;
+    font-family: 'Garamond', 'EB Garamond';
   }
 }
 
 @media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   /* iOS-specifikus stílusok itt */
   body {
-    font-family: 'Garamond', serif;
+    font-family: 'Garamond', 'EB Garamond';
   }
 }
