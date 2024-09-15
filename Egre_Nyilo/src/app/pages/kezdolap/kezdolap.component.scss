@@ -18,7 +18,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  font-family: 'Garamond';
+  font-family: 'EB Garamond';
   font-size: 3em;
   color: rgb(255, 255, 255);
   padding: 10px;
@@ -54,12 +54,13 @@
   width: 100%;
   max-width: 65rem;
   margin: 0 auto;
+  font-family: 'Garamond';
   // text-align: justify;
 }
 
 .type1{
   font-size: 22px;
-  font-family: 'Garamond';
+  font-family: 'Garamond', 'EB Garamond';
   color: black;
   text-align: left !important;
   // text-align: justify;
